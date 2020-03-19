@@ -5,10 +5,31 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#58B15F",
+    "navigationBarTitleText": "百慕达",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
+  "usingComponents": {
+		"van-steps": "../../miniprogram_npm/vant-weapp/steps/index",
+		"van-tag": "../../miniprogram_npm/vant-weapp/tag/index",
+		"van-field": "../../miniprogram_npm/vant-weapp/field/index",
+		"van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+		"van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index",
+		"van-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+		"van-button": "../../miniprogram_npm/vant-weapp/button/index",
+		"van-tab": "../../miniprogram_npm/vant-weapp/tab/index",
+		"van-tabs": "../../miniprogram_npm/vant-weapp/tabs/index",
+		"van-checkbox": "../../miniprogram_npm/vant-weapp/checkbox/index",
+		"van-checkbox-group": "../../miniprogram_npm/vant-weapp/checkbox-group/index",
+		"van-card": "../../miniprogram_npm/vant-weapp/card/index",
+		"van-icon": "../../miniprogram_npm/vant-weapp/icon/index",
+		"van-goods-action": "../../miniprogram_npm/vant-weapp/goods-action/index",
+		"van-goods-action-icon": "../../miniprogram_npm/vant-weapp/goods-action-icon/index",
+		"van-goods-action-button": "../../miniprogram_npm/vant-weapp/goods-action-button/index",
+		"van-stepper": "../../miniprogram_npm/vant-weapp/stepper/index",
+		"van-submit-bar": "../../miniprogram_npm/vant-weapp/submit-bar/index"
+	},
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
