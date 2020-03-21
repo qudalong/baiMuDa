@@ -1,5 +1,4 @@
 <!-- <button bindtap="requestMsg">11</button> -->
-<van-dialog id="van-dialog" />
 <van-tabs active="{{ active }}" color="#58B15F" swipeable sticky bind:change="onChange">
 	<van-tab wx:for="{{tablist}}" wx:key="unique" title="{{item}}">
 		<view class="order-list">

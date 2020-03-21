@@ -9,7 +9,7 @@
 		<van-cell title="订单管理" is-link link-type="navigateTo" url="/pages/orderMange/index" />
 		<van-cell title="我的地址" is-link />
 		<van-cell title="我的发票" is-link />
-		<van-cell title="用户须知" is-link />
+		<van-cell title="用户须知" is-link link-type="navigateTo" url="/pages/question/index" />
 		<van-cell title="资格证书" is-link />
 		<van-cell title="我的收藏" is-link />
 		<van-cell title="意见反馈" is-link />

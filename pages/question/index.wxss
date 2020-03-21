@@ -1,0 +1,16 @@
+.question{
+	display: flex;
+	margin-bottom: 40rpx;
+}
+.wenhao{
+	margin-right: 4px;
+	margin-top: 10rpx;
+}
+.title{
+	font-size: 34rpx;
+	margin-bottom: 20rpx;
+}
+.content{
+	flex: 1;
+	line-height: 1.6;
+}

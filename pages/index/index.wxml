@@ -1,8 +1,8 @@
 <view wx:for="{{list}}" wx:key="unique" class="card hover">
-  <image class="card-img" src="/images/localhost/demo.jpg"></image>
+  <image class="card-img" src="https://mp.ucloudant.com/attachment/{{item.img}}"></image>
 	<view class="row-b">
-		<view class="name">1L*12雀巢淡奶油</view>
-		<view class="price c"><text class='a'>￥</text>398.00</view>
+		<view class="name">{{item.name}}</view>
+		<view class="price c"><text class='a'>￥</text>{{item.money}}</view>
 		<van-icon name="point-gift-o" size='16px' />
 	</view>
 </view>

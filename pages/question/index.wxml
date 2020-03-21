@@ -1,0 +1,21 @@
+<view class='question'>
+	<van-icon class='wenhao' name="question-o" size='20px' color="#58B15F" />
+	<view class='content'>
+		<view class='c title'>问：百慕达的送达时效？</view>
+		<view>答：本地线路的最迟时效都是22点下单次日送达，周六不送货，城际线路要看具体的排班表，疫情期间时效会变慢，详询客服。</view>
+	</view>
+</view>
+<view class='question'>
+	<van-icon class='wenhao' name="question-o" size='20px' color="#58B15F" />
+	<view class='content'>
+		<view class='c title'>问：百慕达的送达时效？</view>
+		<view>答：本地线路的最迟时效都是22点下单次日送达，周六不送货，城际线路要看具体的排班表，疫情期间时效会变慢，详询客服。</view>
+	</view>
+</view>
+<view class='question'>
+	<van-icon class='wenhao' name="question-o" size='20px' color="#58B15F" />
+	<view class='content'>
+		<view class='c title'>问：百慕达的送达时效？</view>
+		<view>答：本地线路的最迟时效都是22点下单次日送达，周六不送货，城际线路要看具体的排班表，疫情期间时效会变慢，详询客服。</view>
+	</view>
+</view>
