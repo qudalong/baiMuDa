@@ -1,0 +1,272 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 100rpx;
+  width: 100%;
+  display: flex;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+}
+
+
+.left-wrapper {
+  /* width: 200rpx; */
+  text-align: center;
+  padding-right: 20rpx;
+  font-size: 30rpx;
+  background: #f0f0f0;
+}
+
+.right-wrapper {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.type-wrapper .item {
+  margin-bottom: 5px;
+}
+
+.nav-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center; */
+}
+.type-food{
+  width: 100rpx;
+  text-align: center;
+  padding: 0 20rpx;
+  /* position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%); */
+}
+
+
+.imag {
+  width: 80px;
+  height: 80px;
+}
+
+.a-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  text-align: left;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+
+.operation {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  padding: 0 8rpx;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.type-name {
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+}
+
+.type-wrapper .item:last-child {
+  margin-bottom: 0;
+}
+
+.active {
+  background: #fff;
+  color: #6d9eeb;
+}
+/* 购物车详情 */
+
+.shop-cart-list .item {
+  display: flex;
+  justify-content: space-between;
+  padding:16rpx 20rpx;
+  align-items: center;
+}
+.shop-cart-list .food-name{
+ flex: 1;
+}
+.shop-cart-list .money{
+  min-width: 150rpx;
+  text-align: center;
+  margin-right: 30rpx;
+}
+.cover-shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100rpx;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+}
+.cart-scroll-list{
+  height: 350rpx;
+}
+.cart-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:16rpx 20rpx;
+  background: #f0f0f0;
+}
+.icon-gouwuche{
+  position: relative;
+}
+
+/* 购物车 */
+.shop-cart {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+  font-size: 30rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  border-top: 1px solid #ccc;
+}
+.shop-cart .cart{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.shop-cart .btn{
+  width: 200rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background: #ccc;
+}
+
+.icon-gouwuche:before {
+  content: "\e601";
+  font-size: 60rpx;
+}
+.icon-gouwuche{
+  width: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 50rpx 0 30rpx;
+}
+.hight{
+  border: 1px solid #6d9eeb;
+}
+.gary{
+  color: #ccc;
+}
+
+/*详情  */
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.cover-detail {
+  width: 80%;
+  background: #fff;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10rpx;
+  z-index: 99999999999999;
+  overflow: hidden;
+}
+
+.good-info {
+  padding: 10rpx 30rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.imgUrl {
+  width: 100%;
+}
+
+.row-line {
+  margin: 20rpx 0;
+}
+
+.add-card {
+  padding:10rpx 20rpx;
+  border-radius: 4rpx;
+  color: #fff;
+  font-size: 26rpx;
+  background: #a5b730;
+}
+
+.details {
+  text-align: justify;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+  margin: 20rpx 0 10rpx;
+}
+
+.money {
+  color: #a5b730;
+   font-size: 26rpx;
+}
+.cart-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-cart-list {
+  position: fixed;
+  left: 0;
+  /* bottom: 100rpx; */
+  width: 100%;
+  background: #fff;
+  font-size: 30rpx;
+}
+
+/* 动画函数 */
+.translateY {
+  animation: showUp 0.5s 1 both;
+}
+
+@keyframes showUp {
+  0% {
+    bottom: 0rpx;
+  }
+
+  100% {
+    bottom: 100rpx;
+  }
+}

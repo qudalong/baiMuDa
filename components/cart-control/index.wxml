@@ -1,0 +1,5 @@
+<view class="operation">
+  <view wx:if="{{goodCount>0}}" class="iconfont icon-jian" catchtap='minus'></view>
+  <view wx:if="{{goodCount>0}}" class='count'>{{goodCount}}</view>
+  <view class='iconfont icon-jia' catchtap='add'></view>
+</view>

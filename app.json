@@ -1,7 +1,13 @@
 {
   "pages": [
+    "pages/my/my",
+    "pages/orderList/index",
+    "pages/orderMange/index",
+		"pages/shopping1/shopping1",
+		"pages/shopping/shopping",
     "pages/index/index",
-    "pages/logs/logs"
+		"pages/shopCart/shopCart",
+    "pages/logs/logs" 
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,5 +37,34 @@
 		"van-submit-bar": "../../miniprogram_npm/vant-weapp/submit-bar/index"
 	},
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#58B15F",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "images/icon/nav-icon-index.png",
+				"selectedIconPath": "images/icon/nav-icon-index.active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/shopping1/shopping1",
+				"iconPath": "images/icon/nav-icon-cart.png",
+				"selectedIconPath": "images/icon/nav-icon-cart.active.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/shopCart/shopCart",
+				"iconPath": "images/icon/nav-icon-cart.png",
+				"selectedIconPath": "images/icon/nav-icon-cart.active.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "images/icon/nav-icon-user.png",
+				"selectedIconPath": "images/icon/nav-icon-user.active.png",
+				"text": "我的"
+			}
+		]
+	}
 }

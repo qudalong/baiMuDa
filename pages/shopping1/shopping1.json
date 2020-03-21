@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-cart-control": "/components/cart-control/index",
+    "v-bubble": "/components/bubble/index"
+  }
+}

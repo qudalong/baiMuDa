@@ -1,0 +1,1 @@
+<view wx:if='{{num>0}}' class='total-count'>{{num}}</view>

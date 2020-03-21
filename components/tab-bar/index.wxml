@@ -1,0 +1,6 @@
+<view class='tab-swiper'>
+  <view class='item {{currentIndex == 0 ? "active" : ""}}' data-current='0' bindtap='checkCurrent'>停车场</view>
+  <view class='item {{currentIndex == 1 ? "active" : ""}}' data-current='1' bindtap='checkCurrent'>洗车点</view>
+  <view class='item {{currentIndex == 2 ? "active" : ""}}' data-current='2' bindtap='checkCurrent'>加油站</view>
+  <view class='item {{currentIndex == 3 ? "active" : ""}}' data-current='3' bindtap='checkCurrent'>车检站</view>
+</view>

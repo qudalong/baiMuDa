@@ -1,0 +1,6 @@
+<view>
+	<van-cell-group>
+		<van-cell title="订单列表" is-link link-type="navigateTo" url="/pages/orderList/index" />
+		<van-cell title="售后申请列表" is-link />
+	</van-cell-group>
+</view>

@@ -1,0 +1,12 @@
+.total-count {
+  font-size: 24rpx;
+  padding: 0 10rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  right: 1rpx;
+  /* transform: translateX(-50%); */
+  top: 6rpx;
+  background: #ff8200;
+  color: #fff;
+  line-height: 1.5;
+}

@@ -1,0 +1,81 @@
+<view class='container'>
+	<view class='left-wrapper'>
+		<!-- 左边 -->
+		<scroll-view class="scroll-view_H" scroll-y="true" style="height:100%">
+			<view wx:if='{{categoriesList.length}}' wx:for='{{categoriesList}}' wx:key='unquie' class="nav-item {{index === navActive ? 'active' : ''}}"
+			 data-id="a{{item.id}}" data-index="{{index}}" catchtap="chooseType">
+				<view class='type-food'>{{item.title}}</view>
+				<v-bubble num='{{item.typeItemCount}}'></v-bubble>
+			</view>
+		</scroll-view>
+	</view>
+	<view class='right-wrapper content'>
+		<van-tabs active="{{ active }}" color="#58B15F" swipeable  bind:change="onChange">
+			<van-tab wx:for="{{categoriesList}}" wx:key="unique" title="{{item.title}}">
+				<!-- 右边 -->
+				<!-- <scroll-view scroll-y="true" bindscroll="onScroll" scroll-into-view="{{toView}}" scroll-with-animation="true" style="height:100%"> -->
+					<view class='pesticide type-wrapper'>
+						<view wx:for='{{list}}'  wx:key='unquie' class='item' bindtap="showDetails">
+							<image src='{{item.thumb}}' class='imag'></image>
+							<view class='a-right'>
+								<view>{{item.title}}</view>
+								<view>月售量{{item.original_price}}份</view>
+								<view class='row'>
+									<view data->￥{{item.price}}</view>
+								</view>
+							</view>
+						</view>
+					</view>
+				<!-- </scroll-view> -->
+			</van-tab>
+		</van-tabs>
+	</view>
+</view>
+
+<!-- 购物车 -->
+<view class='shop-cart' catchtap='showCartList'>
+	<view class='cart'>
+		<view class="iconfont icon-gouwuche {{selectFoods.length ? 'hight' : 'gary'}}">
+			<v-bubble num='{{totalCount}}'></v-bubble>
+		</view>
+		<view class='total-money'>共{{totalMoney}}元</view>
+	</view>
+	<view class='btn'>选好了</view>
+</view>
+
+
+<!-- 购物车详情 -->
+<!-- <view wx:if='{{closeShadow && totalMoney}}' class='cover-shadow' bindtap='closeShadow'>
+	<view class="shop-cart-list {{totalMoney?'translateY':''}}">
+		<view class='cart-title'>
+			<view>已选商品</view>
+			<view bindtap='clearShopCart'>清空购物车</view>
+		</view>
+		<scroll-view class="{{selectFoods.length>5?'cart-scroll-list':''}}" scroll-y="true">
+			<view class='item' wx:for='{{selectFoods}}' wx:key='unquie'>
+				<block>
+					<view class='food-name'>{{item.name}}</view>
+					<view class='money'>￥{{item.money*item.count}}</view> -->
+					<!-- 购物车控制器 -->
+					<!-- <view class='cart-control'>
+						<v-cart-control typeOneIndex='{{item.typeOneIndex}}' goodIndex='{{item.goodIndex}}' goodId='{{item.id}}' xsNum='{{item.xs_num}}'
+						 goodOne='{{item.one}}' goodCount='{{item.count}}' bind:stepperEvent='onStepperEvent'></v-cart-control>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+</view> -->
+
+<!--详情弹窗  -->
+<!-- <view wx:if='{{showDetails}}' class="drawer_screen" bindtap="closeShowDetails"></view>
+<view wx:if='{{showDetails}}' class='cover-detail'>
+	<image class='imgUrl' mode="widthFix" src="{{descImg}}"></image>
+	<view class='good-info'>
+		<view class='name'>大吉大利比萨</view>
+		<view class='details'>比萨好吃不贵</view>
+		<view class='row row-line'>
+			<view class='money'>￥ 12.00</view>
+		</view>
+	</view>
+</view> -->
