@@ -1,4 +1,4 @@
-// pages/shopCart/shopCart.js
+import Dialog from '../../miniprogram_npm/vant-weapp/dialog/dialog';
 Page({
 
 	/**
@@ -16,6 +16,29 @@ Page({
 	 */
 	onLoad: function(options) {
 
+	},
+	//删除订单
+	delOrder(e) {
+		// let id = e.currentTarget.dataset.id;
+		Dialog.confirm({
+			message: '确定要删除该订单吗?'
+		}).then(() => {
+			return
+			request({
+				token: app.globalData.token.prefix + app.globalData.token.token,
+				url: `orders/${id}`,
+				method: 'delete',
+				data: {}
+			}).then(res => {
+				if (res.data.code == 200) {
+					wx.showToast({
+						title: '删除成功',
+						icon: 'none'
+					});
+					this.getOrdersList(); //更新订单
+				}
+			});
+		}).catch(() => {});
 	},
 
 	selectItem(e) {
