@@ -47,7 +47,7 @@ page {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #6d9eeb;
+  color: #58B15F;
 }
 
 .icon-zuoyoujiantou:before {

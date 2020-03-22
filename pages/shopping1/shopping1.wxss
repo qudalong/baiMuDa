@@ -134,6 +134,7 @@
 }
 .icon-gouwuche{
   position: relative;
+	color: #58B15F;
 }
 
 /* 购物车 */
@@ -177,7 +178,7 @@
   margin: 0 50rpx 0 30rpx;
 }
 .hight{
-  border: 1px solid #6d9eeb;
+  border: 1px solid #58B15F;
 }
 .gary{
   color: #ccc;

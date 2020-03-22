@@ -1,6 +1,13 @@
 //app.js
 App({
 	onLaunch: function() {
+		//初始化购物车
+		this.timer = setInterval(() => {
+			this.scanCart(this)
+			console.log('111111111')
+		}, 100);
+		this.scanCart(this);
+
 		// 登录
 		wx.login({
 			success: res => {
@@ -55,5 +62,29 @@ App({
 		userInfo: null,
 		token: '',
 		url: 'https://shop.dnote.cn/api/v1/'
+	},
+	//首先定义了一个方法
+	timer: false,
+	scanCart: function(that) {
+		//我把购物车里面的数据都塞到了缓存里，取名cart,任何一项修改购物车的行为，都会先取购物车的缓存，在重新更新缓存里的购物车参数
+		//购物车
+		let cartNumber = wx.getStorageSync("cartNumber")||0;
+		//统计购物车商品的总数量
+		// let cartnumber = 0; //购物车菜品的一共的数量
+
+		// for (let index in cart) {
+		// 	cartnumber += cart[index].one
+		// }
+
+		if (cartNumber) { //判断购物车的数量个数，购物车如果为空就走else
+			wx.setTabBarBadge({ //购物车不为空 ，给购物车的tabar右上角添加购物车数量标志
+				index: 2, //标志添加位置
+				text: "" + cartNumber + "" //通过编译，将购物车总数量放到这里
+			})
+		} else { //购物车为空
+			wx.removeTabBarBadge({ //移除指定位置的tabbar右上角的标志
+				index: 2,
+			})
+		}
 	}
 })

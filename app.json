@@ -1,19 +1,19 @@
 {
-  "pages": [
+	"pages": [
+		"pages/shopCart/shopCart",
+		"pages/shopping1/shopping1",
     "pages/index/index",
     "pages/my/my",
     "pages/question/index",
     "pages/orderList/index",
     "pages/orderMange/index",
-		"pages/shopping1/shopping1",
 		"pages/shopping/shopping",
-		"pages/shopCart/shopCart",
     "pages/logs/logs" 
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#58B15F",
-    "navigationBarTitleText": "百慕达",
+    "navigationBarTitleText": "通河农贸商品供应平台",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },

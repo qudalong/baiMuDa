@@ -1,1 +1,25 @@
-/* pages/shopCart/shopCart.wxss */
+@import '../shopping1/shopping1.wxss';
+.food{
+	display: flex;
+	align-items: center;
+	border-bottom: 1rpx solid #dedede;
+}
+.ckbox{
+	padding:0 20rpx;
+}
+.item{
+	flex: 1;
+}
+.imag{
+	border-radius: 10rpx;
+}
+.btn-grounp{
+	display: flex;
+	align-items: center;
+}
+.del{
+	padding:0 30rpx 0 6rpx;
+}
+.total-money{
+	margin-left: 80rpx;
+}
